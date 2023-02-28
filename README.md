@@ -1,6 +1,3 @@
-# 50 Mpc Galaxy Catalog
-![](https://s3.gifyu.com/images/distance_map_dark.gif)
-
 # Data Model
 ### *Columns included in the stripped sample are marked with :star:*
 
