@@ -1,4 +1,4 @@
-#50 Mpc Galaxy Catalog
+# 50 Mpc Galaxy Catalog
 ![Catalog Map](fullmap.png)
 ## Data Model
 ### *Columns included in the stripped sample are marked with :star:*
