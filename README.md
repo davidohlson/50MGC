@@ -12,6 +12,10 @@
 |`group_id`| | |Galaxy is member of group, number based on Lambert et al. 2020 group catalog|
 |`ra`:star:| |deg |Right Ascension|
 |`dec`:star:| |deg |Declination|
+|`ra_nsa`| |deg |Right Ascension provided by NSA|
+|`dec_nsa`| |deg |Declination provided by NSA|
+|`ra_ned`| |deg |Primary Right Ascension provided by NED|
+|`dec_ned`| |deg |Primary Declination provided by NED|
 |`d25`| |arcmin |Apparent Diameter from Karachentsev and HyperLeda|
 |`v_h`:star:| |km/s |Heliocentric Radial, see Section 4.1|
 |`v_cmb`| |km/s |Radial velocity with respect to CMB radiation|
