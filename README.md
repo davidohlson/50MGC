@@ -22,6 +22,7 @@
 |`v_source`| | |Original source for compiled velocity, list options|
 |`chandra_observation`| | |True if CSCView crossmatch returned a limiting sensitivity as described in Section 7|
 |`chandra_detection`| | |True if CSCView crossmatch returned flux information as described in Section 7|
+|`chandra_detection_3arcsec`| | |True if CSCView crossmatch returned flux information using a 3" matching radius as described in Section 7|
 |`hl_obj`| | |True for objects in HyperLeda|
 |`lvg_obj`| | |True for objects in Karachentsev's Catalog of Local Volume Galaxies|
 |`nsa_obj`| | |True for objects in NASA-Sloan Atlas|
@@ -30,19 +31,19 @@
 |`t_type`:star:| | |Numerical Hubble T-Type|
 |`color_type`| | |Color-based Type|
 |`best_type`:star:| | |Combined galaxy type|
-|***Photometry***|- |- |***Section 3**|
+|***Photometry***|- |- |***Section 3***|
 |`a_B_leda`| |mag |B-band extinction from Hyperleda multiplied by 0.86 to translate to Schlafly, A_V=0.769*a_B_leda and A_R=0.629*a_B_leda|
 |`a_g_nsa`| |mag |g-band extinction from NASA-Sloan Atlas, the i-band extinction used is = 0.550 a_g_nsa|
 |`EBV_irsa`| | |E(B-V) value from IRSA dust website Schlafly values for all galaxies.  Used only for the Siena Galaxy Atlas sources, A_g/EBV_sga=3.303, A_r/EBV_sga=2.285.|
 |`Bt0_leda`| |mag |Extinction corrected total B band magnitude from HyperLeda|
 |`BV_color_leda`| |mag |(B-V) color from HyperLeda — maybe make this one the final Hyperleda value|
-|`B_lum`| | |B-band Luminosity — derived for non-Hyperleda sources as described in Section 3.2|
+|`B_lum`| |[Lsun] |B-band Luminosity — derived for non-Hyperleda sources as described in Section 3.2|
 |`gi_color_nsa`| |mag |Extinction corrected (g-i) color from NASA-Sloan Atlas|
-|`i_lum_nsa`| | |i-Band Luminosity, calculated using M_i_sun=4.53|
+|`i_lum_nsa`| |[Lsun] |i-Band Luminosity, calculated using M_i_sun=4.53|
 |`gr_color_sga`| |mag |Extinction corrected (g-r) color from Sienna Galaxy Atlas|
-|`r_lum_sga`| | |r-band Luminosity, calculated using M_r_sun=4.65|
+|`r_lum_sga`| |[Lsun] |r-band Luminosity, calculated using M_r_sun=4.65|
 |`BR_color_ned`| |mag |Extinction corrected (B-R) color from NED|
-|`R_lum_ned`| | |R-band Luminosity from NED, calculated using M_R_sun=4.60|
+|`R_lum_ned`| |[Lsun] |R-band Luminosity from NED, calculated using M_R_sun=4.60|
 |`BMag`| |mag |Estimated absolute B-Band Magnitude for all galaxies|
 |`gi_color`| |mag |Estimated g-i color for all galaxies with color measurements.|
 |***Distance***|- |- |***Section 4***|
