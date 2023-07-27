@@ -22,6 +22,7 @@
 |`v_source`| | |Original source for compiled velocity, list options|
 |`chandra_observation`| | |True if CSCView crossmatch returned a limiting sensitivity as described in Section 7|
 |`chandra_detection`| | |True if CSCView crossmatch returned flux information as described in Section 7|
+|`log_lx`| | |X-ray luminosity log(L_x/erg/sec) calculated from the CSC 0.5-7 keV flux using best_dist|
 |`chandra_detection_3arcsec`| | |True if CSCView crossmatch returned flux information using a 3" matching radius as described in Section 7|
 |`hl_obj`| | |True for objects in HyperLeda|
 |`lvg_obj`| | |True for objects in Karachentsev's Catalog of Local Volume Galaxies|
