@@ -67,4 +67,4 @@
 |`chandra_detection`| | |True if CSCView crossmatch returned flux information within a 1" matching radius as described in Section 6|
 |`log_lx`| | |X-ray luminosity log(L_x/erg/sec) calculated from the CSC 0.5-7 keV flux, using a 1" matching radius|
 |`chandra_detection_3arcsec`| | |True if CSCView crossmatch returned flux information within a 3" matching radius as described in Section 6|
-|'log_lx_3arcsec'| | |X-ray luminosity log(L_x/erg/sec) calculated from the CSC 0.5-7 keV flux, using a 3" matching radius|
+|`log_lx_3arcsec`| | |X-ray luminosity log(L_x/erg/sec) calculated from the CSC 0.5-7 keV flux, using a 3" matching radius|
