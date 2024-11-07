@@ -9,6 +9,10 @@
 |`objname`:star:| | |Common galaxy name|
 |`pgc`        | | |PGC number (from HyperLeda)|
 |`nsa_id`| | |NASA-Sloan Atlas NSAID number|
+|`specobjid`| | |unique SDSS 64-bit ID used for optical spectroscopic objects (-1 if not observed)|
+|`plate`| | |SDSS plate number (-1 if not observed)|
+|`fiberid`| | |SDSS fiber number (-1 if not observed)|
+|`mjd`| | |SDSS MJD of spectroscopic observation (-1 if not observed)|
 |`group_id`| | |Galaxy is member of group, number based on Lambert et al. 2020 group catalog|
 |`ra`:star:| |deg |Right Ascension combined from catalog sources|
 |`dec`:star:| |deg |Declination combined from catalog sources|
@@ -23,11 +27,11 @@
 |`hl_obj`| | |True for objects in HyperLeda|
 |`lvg_obj`| | |True for objects in Karachentsev's Catalog of Local Volume Galaxies|
 |`nsa_obj`| | |True for objects in NASA-Sloan Atlas|
-|`sga_obj`| | |True for objects in Sienna Galaxy Atlas|
+|`sga_obj`| | |True for objects in Siena Galaxy Atlas|
 |***Morphology***|- |- |***Section 5***|
 |`t_type`:star:| | |Numerical Hubble T-Type|
 |`color_type`| | |Color-based Type|
-|`best_type`:star:| | |Combined galaxy type|
+|`best_type`:star:| | |Combined galaxy type, see Section 5.1|
 |***Photometry***|- |- |***Section 2***|
 |`a_B_leda`| |mag |B-band extinction from Hyperleda multiplied by 0.86 to translate to Schlafly, A_V=0.769*a_B_leda and A_R=0.629*a_B_leda|
 |`a_g_nsa`| |mag |g-band extinction from NASA-Sloan Atlas, the i-band extinction used is = 0.550 a_g_nsa|
@@ -37,12 +41,13 @@
 |`B_lum`| |[Lsun] |B-band Luminosity — derived for non-Hyperleda sources as described in Section 2.2|
 |`gi_color_nsa`| |mag |Extinction corrected (g-i) color from NASA-Sloan Atlas|
 |`i_lum_nsa`| |[Lsun] |i-Band Luminosity, calculated using M_i_sun=4.53|
-|`gr_color_sga`| |mag |Extinction corrected (g-r) color from Sienna Galaxy Atlas|
+|`gr_color_sga`| |mag |Extinction corrected (g-r) color from Siena Galaxy Atlas|
 |`r_lum_sga`| |[Lsun] |r-band Luminosity, calculated using M_r_sun=4.65|
 |`BR_color_ned`| |mag |Extinction corrected (B-R) color from NED|
 |`R_lum_ned`| |[Lsun] |R-band Luminosity from NED, calculated using M_R_sun=4.60|
 |`BMag`| |mag |Estimated absolute B-Band Magnitude for all galaxies|
 |`gi_color`| |mag |Estimated g-i color for all galaxies with color measurements|
+|`mag_flag`| | |Flags galaxies with magnitude preference exceptions as described in Section 2.3|
 |***Distance***|- |- |***Section 3***|
 |`cf3_dist`| |Mpc |Distances from CosmicFlows3 Calculator|
 |`cf3_dist_error`| |Mpc |Error on cf3_dist|
@@ -59,7 +64,7 @@
 |`logmass_gr`| |[Msun] |log(M*) from (g-r)|
 |`logmass_BV`| |[Msun] |log(M*) from (B-V)|
 |`logmass_BR`| |[Msun] |log(M*) from (B-R)|
-|`logmass`:star:    | |[Msun] |Compiled best log(M*) estimate|
+|`logmass`:star:| |[Msun] |Compiled best log(M*) estimate|
 |`logmass_error`:star:| |[Msun] |Error on logmass|
 |`logmass_src`:star:| | |Color used for best mass estimate: g-i, g-r, B-V, B-R|
 |***X-ray***|- |- |***Section 6***|
